@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Places_Restaurants">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/placesRestaurants_ImageRLayout"
+            android:layout_width="match_parent"
+            android:layout_height="225dp"
+            android:background="#00ccff">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/placesRestaurants_Image"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="26dp"
+                android:src="@drawable/ic_person_black_24dp"
+                app:civ_border_color="@color/colorWhite"
+                app:civ_border_width="5dp"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/placesRestaurants_ImageRLayout_ImageRLayout"
+            android:background="@drawable/login_background"
+            >
+
+            <TextView
+                android:id="@+id/placesRestaurants_Header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="Sitios Turísticos y Restaurantes en Chía"
+                android:textAllCaps="true"
+                android:textColor="@color/colorWhite"
+                android:textSize="25dp"
+                />
+
+
+            <TextView
+                android:id="@+id/placesRestaurants_NamePlaceTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/placesRestaurants_Header"
+                android:layout_marginLeft="20dp"
+                android:text="Nombre Stio Turístico"
+                android:textColor="@color/colorWhite"
+                android:textSize="20dp"
+                />
+
+            <EditText
+                android:id="@+id/placesRestaurants_NamePlace"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@id/placesRestaurants_NamePlaceTextView"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/fields2"
+                android:hint="Sitio de Interés"
+                android:paddingLeft="20dp"
+                android:textColor="@color/colorWhite"
+                android:textColorHint="@color/colorWhite"
+                />
+
+
+
+
+
+
+            <TextView
+                android:id="@+id/placesRestaurants_PlaceTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/placesRestaurants_NamePlace"
+                android:layout_marginLeft="20dp"
+                android:text="Lugar"
+                android:textColor="@color/colorWhite"
+                android:textSize="20dp"
+                android:layout_marginTop="10dp"
+                />
+
+            <EditText
+                android:id="@+id/placesRestaurants_Place"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@id/placesRestaurants_PlaceTextView"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/fields2"
+                android:hint="Lugar"
+                android:paddingLeft="20dp"
+                android:textColor="@color/colorWhite"
+                android:textColorHint="@color/colorWhite"
+                android:inputType="text"
+                />
+
+
+
+            <TextView
+                android:id="@+id/placesRestaurants_AddressTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/placesRestaurants_Place"
+                android:layout_marginLeft="20dp"
+                android:text="Dirección"
+                android:textColor="@color/colorWhite"
+                android:textSize="20dp"
+                android:layout_marginTop="10dp"
+                />
+
+            <EditText
+                android:id="@+id/placesRestaurants_Address"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@id/placesRestaurants_AddressTextView"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/fields2"
+                android:hint="Dirección"
+                android:paddingLeft="20dp"
+                android:textColor="@color/colorWhite"
+                android:textColorHint="@color/colorWhite"
+                android:inputType="text"
+                />
+
+
+
+
+            <TextView
+                android:id="@+id/placesRestaurants_HourTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/placesRestaurants_Address"
+                android:layout_marginLeft="20dp"
+                android:text="Hora"
+                android:textColor="@color/colorWhite"
+                android:textSize="20dp"
+                android:layout_marginTop="10dp"
+                />
+
+            <EditText
+                android:id="@+id/placesRestaurants_Hour"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@id/placesRestaurants_HourTextView"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/fields2"
+                android:hint="Hora"
+                android:paddingLeft="20dp"
+                android:textColor="@color/colorWhite"
+                android:textColorHint="@color/colorWhite"
+                android:inputType="text"
+                />
+
+
+            <Button
+                android:id="@+id/placesRestaurants_Create"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_below="@+id/placesRestaurants_Hour"
+                android:text="Añadir"
+                android:fontFamily="sans-serif-medium"
+                android:textAllCaps="true"
+                android:textColor="@color/colorWhite"
+                android:paddingLeft="70dp"
+                android:paddingRight="70dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="20dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/transparent_btn"
+                />
+
+
+
+
+
+
+
+            <TextView
+                android:id="@+id/placesRestaurants_NameRestaurantTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/placesRestaurants_Create"
+                android:layout_marginLeft="20dp"
+                android:text="Nombre Restaurante"
+                android:textColor="@color/colorWhite"
+                android:textSize="20dp"
+                />
+
+            <EditText
+                android:id="@+id/placesRestaurants_NameRestaurant"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@id/placesRestaurants_NameRestaurantTextView"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/fields2"
+                android:hint="Nombre Restaurante"
+                android:paddingLeft="20dp"
+                android:textColor="@color/colorWhite"
+                android:textColorHint="@color/colorWhite"
+                />
+
+
+
+
+
+
+            <TextView
+                android:id="@+id/placesRestaurants_Place2TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/placesRestaurants_NameRestaurant"
+                android:layout_marginLeft="20dp"
+                android:text="Sitio de Interés"
+                android:textColor="@color/colorWhite"
+                android:textSize="20dp"
+                android:layout_marginTop="10dp"
+                />
+
+            <EditText
+                android:id="@+id/placesRestaurants_Place2"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@id/placesRestaurants_Place2TextView"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/fields2"
+                android:hint="Sitio de Interés"
+                android:paddingLeft="20dp"
+                android:textColor="@color/colorWhite"
+                android:textColorHint="@color/colorWhite"
+                android:inputType="text"
+                />
+
+
+
+            <TextView
+                android:id="@+id/placesRestaurants_RestaurantTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/placesRestaurants_Place2"
+                android:layout_marginLeft="20dp"
+                android:text="Restaurante"
+                android:textColor="@color/colorWhite"
+                android:textSize="20dp"
+                android:layout_marginTop="10dp"
+                />
+
+            <EditText
+                android:id="@+id/placesRestaurants_Restaurant"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@id/placesRestaurants_RestaurantTextView"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/fields2"
+                android:hint="Restaurante"
+                android:paddingLeft="20dp"
+                android:textColor="@color/colorWhite"
+                android:textColorHint="@color/colorWhite"
+                android:inputType="text"
+                />
+
+
+
+
+            <TextView
+                android:id="@+id/placesRestaurants_Hour2TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/placesRestaurants_Restaurant"
+                android:layout_marginLeft="20dp"
+                android:text="Hora"
+                android:textColor="@color/colorWhite"
+                android:textSize="20dp"
+                android:layout_marginTop="10dp"
+                />
+
+            <EditText
+                android:id="@+id/placesRestaurants_Hour2"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@id/placesRestaurants_Hour2TextView"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/fields2"
+                android:hint="Hora"
+                android:paddingLeft="20dp"
+                android:textColor="@color/colorWhite"
+                android:textColorHint="@color/colorWhite"
+                android:inputType="text"
+                />
+
+
+            <Button
+                android:id="@+id/placesRestaurants_Done"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_below="@+id/placesRestaurants_Hour2"
+                android:text="Hecho"
+                android:fontFamily="sans-serif-medium"
+                android:textAllCaps="true"
+                android:textColor="@color/colorWhite"
+                android:paddingLeft="70dp"
+                android:paddingRight="70dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="20dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/transparent_btn"
+                />
+
+
+
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>

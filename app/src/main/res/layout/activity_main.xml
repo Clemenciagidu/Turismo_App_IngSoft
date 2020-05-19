@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:background="@drawable/login_background"
+    tools:context=".MainActivity">
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_centerInParent="true">
+
+            <TextView
+                android:id="@+id/login_header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Aplicación Turismo En Chia"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="25sp"
+                android:textColor="#FFF"
+                />
+
+
+
+
+
+        <RelativeLayout
+            android:id="@+id/login_secondRlayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:visibility="gone"
+            android:layout_below="@id/login_header">
+
+            <TextView
+                android:id="@+id/loginTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="Iniciar Sesión"
+                android:textColor="@color/colorWhite"
+                android:textSize="30sp"
+                />
+
+            <LinearLayout
+                android:id="@+id/login_lLayout"
+                android:layout_below="@id/loginTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-light"
+                        android:text="USUARIO"
+                        android:textAllCaps="true"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="15sp"
+                        />
+
+
+                    <EditText
+                        android:id="@+id/login_userName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:padding="15dp"
+                        android:background="@drawable/shapeemail"
+                        android:drawableLeft="@drawable/ic_person_black_24dp"
+                        android:drawablePadding="10dp"
+                        android:hint="Nombre de Usuario"
+                        android:inputType="textPersonName"
+                        android:textColorHighlight="#FFF"
+                        android:textColorHint="#FFF"
+                        android:textColor="#FFF"
+                        />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical">
+
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-light"
+                        android:text="Contraseña"
+                        android:textAllCaps="true"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="15sp"
+                        />
+
+                    <com.scottyab.showhidepasswordedittext.ShowHidePasswordEditText
+                        android:id="@+id/login_Password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:padding="15dp"
+                        android:background="@drawable/shapeemail"
+                        android:drawableLeft="@drawable/ic_lock_open_black_24dp"
+                        android:drawablePadding="10dp"
+                        android:hint="Contraseña"
+                        android:textColor="#FFF"
+                        android:textColorHint="#FFF"
+                        android:inputType="textPassword"
+                        android:layout_below="@id/login_userName"
+                        app:drawable_hide="@drawable/ic_visibility_on"
+                        app:drawable_show="@drawable/ic_visibility_off" />
+
+
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <CheckBox
+                android:id="@+id/login_StayLoggedIn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/login_lLayout"
+                android:text="Mantener Sesión Iniciada"
+                android:textSize="15sp"
+                android:fontFamily="sans-serif-light"
+                android:textColor="@color/colorWhite"
+                android:layout_alignParentRight="true"/>
+
+
+            <Button
+                android:id="@+id/btn_SignIn"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_below="@+id/login_StayLoggedIn"
+                android:text="Ingresar"
+                android:fontFamily="sans-serif-medium"
+                android:textAllCaps="true"
+                android:textColor="@color/colorWhite"
+                android:paddingLeft="70dp"
+                android:paddingRight="70dp"
+                android:layout_marginTop="15dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/transparent_btn"
+                />
+        </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/login_RLayoutBotton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:visibility="gone"
+
+        >
+
+            <Button
+                android:id="@+id/login_RegisterUser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorTransparent"
+                android:drawableLeft="@drawable/ic_lock_open_black_24dp"
+                android:fontFamily="sans-serif"
+                android:text="Registrar Usuario"
+                android:textAllCaps="true"
+                android:textColor="@color/colorWhite"
+                />
+
+            <Button
+                android:id="@+id/login_VisitPlacesRestaurants"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@color/colorTransparent"
+                android:drawableLeft="@drawable/ic_launcher_foreground"
+                android:text="Lugares-Restaurantes"
+                android:fontFamily="sans-serif"
+                android:textAllCaps="true"
+                android:textColor="@color/colorWhite"
+                />
+
+
+        </RelativeLayout>
+
+
+
+
+
+</RelativeLayout>

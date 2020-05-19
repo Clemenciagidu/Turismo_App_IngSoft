@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Looking_For">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/lookingFor_ImageRLayout"
+        android:layout_width="match_parent"
+        android:layout_height="225dp"
+        android:background="#00ccff"
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/lookingFor_Image"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="26dp"
+            android:src="@drawable/ic_launcher_background"
+            app:civ_border_color="@color/colorWhite"
+            app:civ_border_width="5dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/lookingFor_ImageRLayout"
+        android:background="@drawable/login_background"
+        >
+
+
+    <TextView
+        android:id="@+id/lookingFor_Header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="Búsqueda de Sitios de Interés y Restaurantes"
+        android:textAllCaps="true"
+        android:textColor="@color/colorWhite"
+        android:textSize="25dp"
+        />
+
+
+    <TextView
+        android:id="@+id/lookingFor_NameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lookingFor_Header"
+        android:layout_marginLeft="20dp"
+        android:text="Sitio de Interés"
+        android:textColor="@color/colorWhite"
+        android:textSize="20dp"
+        />
+
+    <EditText
+        android:id="@+id/lookingFor_Name"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/lookingFor_NameTextView"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/fields"
+        android:hint="Lugar"
+        android:paddingLeft="20dp"
+        android:textColor="@color/colorWhite"
+        android:textColorHint="@color/colorWhite"
+        />
+
+
+
+
+    <TextView
+        android:id="@+id/lookingFor_LocationTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lookingFor_Name"
+        android:layout_marginLeft="20dp"
+        android:text="Ubicación del Lugar"
+        android:textColor="@color/colorWhite"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        />
+
+    <EditText
+        android:id="@+id/lookingFor_Location"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/lookingFor_LocationTextView"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/fields"
+        android:hint="Ubicación"
+        android:paddingLeft="20dp"
+        android:textColor="@color/colorWhite"
+        android:textColorHint="@color/colorWhite"
+        android:inputType="text"
+        />
+
+    <TextView
+        android:id="@+id/lookingFor_PictureTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lookingFor_Location"
+        android:layout_marginLeft="20dp"
+        android:text="Vista"
+        android:textColor="@color/colorWhite"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        />
+
+    <EditText
+        android:id="@+id/lookingFor_Picture"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/lookingFor_PictureTextView"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/fields"
+        android:hint="Vista"
+        android:paddingLeft="20dp"
+        android:textColor="@color/colorWhite"
+        android:textColorHint="@color/colorWhite"
+        android:inputType="number"
+        />
+
+
+        <Button
+            android:id="@+id/lookingFor_LookAtPlaces"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:layout_below="@+id/lookingFor_Picture"
+            android:text="Ver"
+            android:fontFamily="sans-serif-medium"
+            android:textAllCaps="true"
+            android:textColor="@color/colorWhite"
+            android:paddingLeft="70dp"
+            android:paddingRight="70dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="20dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/transparent_btn"
+            />
+
+    </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+
+
+
+
+</ScrollView>
